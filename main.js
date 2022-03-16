@@ -18,5 +18,14 @@ let countOverusedWords = storyWords.filter((word) => {
 });
 console.log('countOverusedWords', countOverusedWords.length);
 
+//  count how many sentences are in the paragraph
+const regex = /[.!]/;
+const numOfSentences = story.split(regex);
+console.log(`There are ${numOfSentences.length - 1} sentences in the paragraph`);
 
+// word count
+console.log(storyWords.length);
+
+// betterWords array as a single string
+console.log(betterWords.join(' '));
 
